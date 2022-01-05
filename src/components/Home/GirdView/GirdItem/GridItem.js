@@ -24,6 +24,8 @@ const GridItem = ({ post }) => {
     <>
       <Col>
         <div
+          data-aos="flip-left"
+          data-aos-duration="1000"
           onClick={handleModalShow}
           className="gird-item-box p-3 bg-white shadow-sm"
         >

@@ -23,6 +23,8 @@ const ListItem = ({ post }) => {
   return (
     <>
       <div
+        data-aos="fade-right"
+        data-aos-duration="1000"
         onClick={handleModalShow}
         className="d-flex justify-content-between align-items-center gap-3"
       >

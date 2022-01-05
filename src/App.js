@@ -5,6 +5,10 @@ import GridView from "./components/Home/GirdView/GridView";
 import Home from "./components/Home/Home/Home";
 import ListView from "./components/Home/ListView/ListView";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 function App() {
   return (

@@ -13,7 +13,7 @@ const GridView = () => {
   // get posts from redux
   const { allPosts } = useSelector((state) => state.posts);
   return (
-    <div>
+    <div data-aos="fade-right" data-aos-duration="1000">
       <Row xs={1} md={2} lg={3} className="g-4">
         {allPosts.slice(0, 6).map((post) => (
           <GridItem key={post.id} post={post} />
