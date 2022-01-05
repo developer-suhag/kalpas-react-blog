@@ -1,0 +1,23 @@
+.gird-item-box {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+
+.gird-item-box:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  cursor: pointer;
+}
+
+.gird-item-box h3,
+p {
+  text-transform: capitalize;
+}
+
+.gird-item-box img {
+  border-radius: 5px;
+}

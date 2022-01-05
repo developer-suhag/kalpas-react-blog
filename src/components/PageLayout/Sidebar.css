@@ -1,7 +1,7 @@
 /* side bar   */
 .side-bar {
   background: #e9f0f5;
-  height: 100%;
+  height: 100% !important;
 }
 .side-bar h4,
 p {
@@ -31,4 +31,10 @@ p {
 }
 .nav-selected svg {
   color: #35403b;
+}
+
+@media only screen and (min-width: 1920px) {
+  .side-bar {
+    height: 100vh !important;
+  }
 }
