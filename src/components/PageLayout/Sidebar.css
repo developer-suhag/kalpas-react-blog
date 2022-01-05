@@ -16,7 +16,7 @@ p {
 }
 
 /* toggle-icon */
-.toggle-icon {
+.toggle-icon a {
   background: #d6dee7;
   width: 40%;
   padding: 10px;
@@ -24,6 +24,13 @@ p {
 .toggle-icon svg {
   font-size: 40px;
   color: #9c9c9c;
+}
+
+.nav-selected {
+  background: #92e5c2 !important;
+}
+.nav-selected svg {
+  color: #35403b;
 }
 
 /* feed back btn  */

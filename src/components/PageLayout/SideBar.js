@@ -1,9 +1,10 @@
 import React from "react";
-import "./Sidebar.css";
-import user from "../../images/user.jpg";
+import { Button } from "react-bootstrap";
 import { AiOutlineUnorderedList } from "react-icons/ai";
 import { BsFillGrid1X2Fill } from "react-icons/bs";
-import { Button } from "react-bootstrap";
+import { Link, NavLink } from "react-router-dom";
+import user from "../../images/user.jpg";
+import "./Sidebar.css";
 
 const SideBar = () => {
   return (
@@ -22,13 +23,23 @@ const SideBar = () => {
       {/* view toggle  */}
       <div className="bg-white p-3 mt-4 rounded-3 shadow text-center">
         <h3>View Toggle</h3>
-        <div className="d-flex justify-content-center mt-3 align-items-center">
-          <div className="toggle-icon">
-            <BsFillGrid1X2Fill />
-          </div>
-          <div className="toggle-icon">
-            <AiOutlineUnorderedList />
-          </div>
+        <div className="d-flex justify-content-center mt-3 align-items-center toggle-icon">
+          <NavLink
+            className={(navInfo) => (navInfo.isActive ? "nav-selected" : "")}
+            to="/home/gridView"
+          >
+            <div>
+              <BsFillGrid1X2Fill />
+            </div>
+          </NavLink>
+          <NavLink
+            className={(navInfo) => (navInfo.isActive ? "nav-selected" : "")}
+            to="/home/listView"
+          >
+            <div>
+              <AiOutlineUnorderedList />
+            </div>
+          </NavLink>
         </div>
       </div>
 
