@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { Outlet } from "react-router-dom";
 import { fetchPosts } from "../../../redux/slices/postSlice";
 import PageLayout from "../../PageLayout/PageLayout";
 
@@ -16,6 +17,7 @@ const Home = () => {
       {/* page layout  */}
       <PageLayout>
         <h3>This is home {allPosts.length} </h3>
+        <Outlet />
       </PageLayout>
     </div>
   );
