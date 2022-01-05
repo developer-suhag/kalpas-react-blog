@@ -1,23 +1,16 @@
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React from "react";
+import { Container } from "react-bootstrap";
 import { Outlet } from "react-router-dom";
-import { fetchPosts } from "../../../redux/slices/postSlice";
 import PageLayout from "../../PageLayout/PageLayout";
 
 const Home = () => {
-  // use dispatch for load post from api
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(fetchPosts());
-  }, [dispatch]);
-  // get posts from redux
-  const { allPosts } = useSelector((state) => state.posts);
   return (
     <div>
       {/* page layout  */}
       <PageLayout>
-        <h3>This is home {allPosts.length} </h3>
-        <Outlet />
+        <Container className="py-5">
+          <Outlet />
+        </Container>
       </PageLayout>
     </div>
   );

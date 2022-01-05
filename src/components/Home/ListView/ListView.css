@@ -1,0 +1,29 @@
+/* list-item-view  */
+.list-item-view {
+  border-radius: 20px;
+  transition: 0.4s;
+}
+.list-item-view:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  cursor: pointer;
+}
+
+.list-item-view img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.title {
+  font-size: 24px;
+  text-transform: capitalize;
+}
+
+.close-icon {
+  background: #fff;
+  padding: 10px;
+  border-radius: 50%;
+}
+.close-icon svg {
+  font-size: 30px;
+  color: #fa8e8e;
+}

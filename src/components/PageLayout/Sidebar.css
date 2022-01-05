@@ -1,7 +1,7 @@
 /* side bar   */
 .side-bar {
   background: #e9f0f5;
-  height: 100vh;
+  height: 100%;
 }
 .side-bar h4,
 p {
