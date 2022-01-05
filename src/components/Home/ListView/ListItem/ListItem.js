@@ -27,7 +27,7 @@ const ListItem = ({ post }) => {
         className="d-flex justify-content-between align-items-center gap-3"
       >
         <div className="list-item-view d-flex align-items-center gap-4 mb-4 p-4 bg-white shadow-sm">
-          <img src="https://i.ibb.co/TWCYHZh/demo-post-img.jpg" alt="" />
+          <img src="https://i.ibb.co/2gtFpMn/demo-post-img.jpg" alt="" />
           <div>
             <h3 className="title">{title}</h3>
             <p>{body}</p>

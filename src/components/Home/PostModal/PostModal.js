@@ -14,7 +14,7 @@ const PostModal = ({ postModalShow, handleModalClose, post }) => {
           <div className="text-center mb-3">
             <img
               className="img-fluid w-100"
-              src="https://i.ibb.co/TWCYHZh/demo-post-img.jpg"
+              src="https://i.ibb.co/2gtFpMn/demo-post-img.jpg"
               alt=""
             />
           </div>
