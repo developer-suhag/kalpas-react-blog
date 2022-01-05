@@ -46,7 +46,7 @@ const SideBar = () => {
       {/* feedback  */}
       <div className="bg-white p-3 mt-4 rounded-3 shadow text-center">
         <h3>Have a Feedback?</h3>
-        <Button className="feed-back-btn" variant="">
+        <Button className="kalpas-btn" variant="">
           We're lisentening!
         </Button>
       </div>

@@ -45,6 +45,7 @@ const ListItem = ({ post }) => {
       <PostModal
         postModalShow={postModalShow}
         handleModalClose={handleModalClose}
+        post={post}
       />
     </>
   );

@@ -1,29 +1,19 @@
 import React from "react";
 import { Button, Modal } from "react-bootstrap";
 
-const PostModal = ({ postModalShow, handleModalClose }) => {
-  //   const [postModalShow, setPostModalShow] = useState(false);
-
-  //   const handleModalClose = () => setPostModalShow(false);
-  //   const handleModalShow = () => setPostModalShow(true);
+const PostModal = ({ postModalShow, handleModalClose, post }) => {
+  const { title, body } = post;
   return (
     <>
-      {/* <Button variant="primary" onClick={handleModalShow}>
-        Launch demo modal
-      </Button> */}
-
-      <Modal centered show={postModalShow} onHide={handleModalClose}>
+      <Modal centered show={postModalShow} onHide={handleModalClose} size="lg">
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title className="text-uppercase">{title}</Modal.Title>
         </Modal.Header>
 
-        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+        <Modal.Body className="text-capitalize">{body}</Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleModalClose}>
+          <Button variant="" className="kalpas-btn" onClick={handleModalClose}>
             Close
-          </Button>
-          <Button variant="primary" onClick={handleModalClose}>
-            Save Changes
           </Button>
         </Modal.Footer>
       </Modal>

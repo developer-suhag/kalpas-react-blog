@@ -9,7 +9,9 @@ const PageNotFound = () => {
       <img src={error} alt="" />
       <div>
         <Link to="/">
-          <Button variant="success">Go Back to Home</Button>
+          <Button variant="" className="kalpas-btn">
+            Go Back to Home
+          </Button>
         </Link>
       </div>
     </Container>

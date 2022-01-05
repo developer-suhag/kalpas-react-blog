@@ -32,13 +32,3 @@ p {
 .nav-selected svg {
   color: #35403b;
 }
-
-/* feed back btn  */
-.feed-back-btn {
-  background: #92e5c2;
-  color: #35403b;
-  font-weight: 700;
-  padding: 10px 30px;
-  border-radius: 10px;
-  margin-top: 15px;
-}
