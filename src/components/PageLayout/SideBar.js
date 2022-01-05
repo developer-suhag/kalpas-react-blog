@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "react-bootstrap";
 import { AiOutlineUnorderedList } from "react-icons/ai";
 import { BsFillGrid1X2Fill } from "react-icons/bs";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import user from "../../images/user.jpg";
 import "./Sidebar.css";
 
@@ -26,7 +26,7 @@ const SideBar = () => {
         <div className="d-flex justify-content-center mt-3 align-items-center toggle-icon">
           <NavLink
             className={(navInfo) => (navInfo.isActive ? "nav-selected" : "")}
-            to="/home/gridView"
+            to="/gridView"
           >
             <div>
               <BsFillGrid1X2Fill />
@@ -34,7 +34,7 @@ const SideBar = () => {
           </NavLink>
           <NavLink
             className={(navInfo) => (navInfo.isActive ? "nav-selected" : "")}
-            to="/home/listView"
+            to="/"
           >
             <div>
               <AiOutlineUnorderedList />
