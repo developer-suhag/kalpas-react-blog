@@ -10,8 +10,17 @@ const PostModal = ({ postModalShow, handleModalClose, post }) => {
           <Modal.Title className="text-uppercase">{title}</Modal.Title>
         </Modal.Header>
 
-        <Modal.Body className="text-capitalize">{body}</Modal.Body>
-        <Modal.Footer>
+        <Modal.Body className="text-capitalize p-3">
+          <div className="text-center mb-3">
+            <img
+              className="img-fluid w-100"
+              src="https://i.ibb.co/TWCYHZh/demo-post-img.jpg"
+              alt=""
+            />
+          </div>
+          <p>{body}</p>
+        </Modal.Body>
+        <Modal.Footer className="border-0">
           <Button variant="" className="kalpas-btn" onClick={handleModalClose}>
             Close
           </Button>

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Col, Row } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchPosts } from "../../../redux/slices/postSlice";
 import GridItem from "./GirdItem/GridItem";

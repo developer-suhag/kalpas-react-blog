@@ -41,6 +41,7 @@ const ListItem = ({ post }) => {
           <FaTimes />
         </Button>
       </div>
+      {/* modal  */}
       <PostModal
         postModalShow={postModalShow}
         handleModalClose={handleModalClose}
