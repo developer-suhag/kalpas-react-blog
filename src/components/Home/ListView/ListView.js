@@ -13,7 +13,7 @@ const ListView = () => {
   // get posts from redux
   const { allPosts } = useSelector((state) => state.posts);
   return (
-    <div data-aos="fade-right" data-aos-duration="1000">
+    <div>
       {allPosts.slice(0, 6).map((post) => (
         <ListItem key={post.id} post={post} />
       ))}
