@@ -2,6 +2,9 @@ import React from "react";
 import { Button, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 
+import validator from "validator";
+import isEmail from "validator/lib/isEmail";
+
 const FeedBackForm = () => {
   const {
     register,
@@ -61,9 +64,10 @@ const FeedBackForm = () => {
         </Form.Select>
         <Form.Label>Email ID:</Form.Label>
         <Form.Control
+          validator
           required
           className="mb-3"
-          type="text"
+          type="email"
           placeholder="example@sample.com"
           {...register("email", { required: true, pattern: /^\S+@\S+$/i })}
         />
