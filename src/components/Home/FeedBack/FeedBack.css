@@ -1,0 +1,11 @@
+.feedback {
+  background: #e6edf2;
+}
+.kalpas-btn-feedback {
+  background: #e5a1a4;
+  color: #413737;
+  font-weight: 700;
+  padding: 10px 30px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
