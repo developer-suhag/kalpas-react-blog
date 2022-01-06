@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Col, Offcanvas, Row } from "react-bootstrap";
 import user from "../../../images/user.jpg";
 import "./FeedBack.css";
+import FeedBackForm from "./FeedBackForm";
 
 const FeedBack = ({ showFeedBack, handleFeedBackClose }) => {
   // feedback
@@ -9,7 +10,7 @@ const FeedBack = ({ showFeedBack, handleFeedBackClose }) => {
   return (
     <>
       <Offcanvas
-        className="w-75 feedback"
+        className="w-75 px-4 feedback"
         show={showFeedBack}
         onHide={handleFeedBackClose}
       >
@@ -48,8 +49,7 @@ const FeedBack = ({ showFeedBack, handleFeedBackClose }) => {
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
-              Some text as placeholder. In real life you can have the elements
-              you have chosen. Like, text, images, lists, etc.
+              <FeedBackForm />
             </Offcanvas.Body>
           </Col>
         </Row>
