@@ -38,12 +38,12 @@ h6 {
   outline: none;
 }
 .pagination > .active > a {
-  background-color: #47ccde;
-  border-color: #47ccde;
+  background-color: #92e5c2;
+  border-color: #92e5c2;
   color: #fff;
 }
 .pagination > li > a {
-  border: 1px solid #47ccde;
+  border: 1px solid #92e5c2;
   padding: 5px 10px;
   outline: none;
   cursor: pointer;
@@ -54,13 +54,13 @@ h6 {
 .pagination > .active > span:hover,
 .pagination > .active > a:focus,
 .pagination > .active > span:focus {
-  background-color: #47ccde;
-  border-color: #47ccde;
+  background-color: #92e5c2;
+  border-color: #92e5c2;
   outline: none;
 }
 .pagination > li > a,
 .pagination > li > span {
-  color: #47ccde;
+  color: #92e5c2;
 }
 .pagination > li:first-child > a,
 .pagination > li:first-child > span,
