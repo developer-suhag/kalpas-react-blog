@@ -4,7 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+a {
+  text-decoration: none;
+}
 /* google font roboto  */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
@@ -40,10 +42,10 @@ h6 {
 .pagination > .active > a {
   background-color: #92e5c2;
   border-color: #92e5c2;
-  color: #fff;
+  color: #35403b;
 }
 .pagination > li > a {
-  border: 1px solid #92e5c2;
+  border: 1px solid #35403b;
   padding: 5px 10px;
   outline: none;
   cursor: pointer;
@@ -55,12 +57,12 @@ h6 {
 .pagination > .active > a:focus,
 .pagination > .active > span:focus {
   background-color: #92e5c2;
-  border-color: #92e5c2;
+  border-color: #35403b;
   outline: none;
 }
 .pagination > li > a,
 .pagination > li > span {
-  color: #92e5c2;
+  color: #35403b;
 }
 .pagination > li:first-child > a,
 .pagination > li:first-child > span,
