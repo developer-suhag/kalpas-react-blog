@@ -40,15 +40,18 @@ h6 {
   outline: none;
 }
 .pagination > .active > a {
-  background-color: #92e5c2;
-  border-color: #92e5c2;
-  color: #35403b;
+  background-color: #fcfcfd;
+  border-color: #6c6c6d;
+  color: #6c6c6d;
 }
 .pagination > li > a {
-  border: 1px solid #35403b;
+  border: 1px solid #6c6c6d;
   padding: 5px 10px;
   outline: none;
   cursor: pointer;
+  border-radius: 50%;
+  margin-right: 5px;
+  font-size: 18px;
 }
 .pagination > .active > a,
 .pagination > .active > span,
@@ -56,13 +59,13 @@ h6 {
 .pagination > .active > span:hover,
 .pagination > .active > a:focus,
 .pagination > .active > span:focus {
-  background-color: #92e5c2;
-  border-color: #35403b;
+  background-color: #fcfcfd;
+  border-color: #fcfcfd;
   outline: none;
 }
 .pagination > li > a,
 .pagination > li > span {
-  color: #35403b;
+  color: #6c6c6d;
 }
 .pagination > li:first-child > a,
 .pagination > li:first-child > span,

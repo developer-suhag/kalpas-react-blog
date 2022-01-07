@@ -18,7 +18,7 @@ const ListView = () => {
 
   // pagination
   const [offset, setOffset] = useState(0);
-  const [post, setPost] = useState([]);
+  const [newsPosts, setNewsPosts] = useState([]);
   const [perPage] = useState(6);
   const [pageCount, setPageCount] = useState(0);
 
@@ -31,7 +31,7 @@ const ListView = () => {
           <ListItem key={post.id} post={post} />
         </div>
       ));
-      setPost(postData);
+      setNewsPosts(postData);
       setPageCount(Math.ceil(posts.length / perPage));
     };
     getData();
@@ -44,7 +44,7 @@ const ListView = () => {
 
   if (posts.status === "pending") {
     return (
-      <div>
+      <div className="text-center">
         <Spinner animation="border" />
       </div>
     );
@@ -52,11 +52,9 @@ const ListView = () => {
 
   return (
     <div>
-      {/* {allPosts.slice(0, 6).map((post) => (
-        <ListItem key={post.id} post={post} />
-      ))} */}
-      {post}
-      <div className="d-flex justify-content-center align-items-center">
+      {/* posts  */}
+      {newsPosts}
+      <div className="d-flex justify-content-center align-items-center mt-4">
         <ReactPaginate
           previousLabel={"<"}
           nextLabel={">"}
