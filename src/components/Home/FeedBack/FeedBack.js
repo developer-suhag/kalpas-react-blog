@@ -36,7 +36,7 @@ const FeedBack = ({ showFeedBack, handleFeedBackClose }) => {
                   className="kalpas-btn-feedback"
                   variant=""
                 >
-                  We're lisentening!
+                  We're listening!
                 </Button>
               </div>
             </div>

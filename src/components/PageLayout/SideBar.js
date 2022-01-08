@@ -58,7 +58,7 @@ const SideBar = () => {
             className="kalpas-btn"
             variant=""
           >
-            We're lisentening!
+            We're listening!
           </Button>
         </div>
       </div>
